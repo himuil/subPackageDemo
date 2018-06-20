@@ -2,13 +2,13 @@
 
 ### 概述
 
-本示例如何使用微信小游戏支持库2.1.0的[分包加载](https://developers.weixin.qq.com/minigame/dev/tutorial/base/subpackages.html)功能
+本示例展示了如何使用微信小游戏支持库2.1.0的[分包加载](https://developers.weixin.qq.com/minigame/dev/tutorial/base/subpackages.html)功能
 
 ### 实现原理
 
-通过写一个subpackage插件实现把不同js文件拷贝到不同目录，同时修改目录内的game.js
+通过写一个subpackage插件实现把不同js文件拷贝到不同目录并修改目录内的game.js
 
-### 将该项目移植进您的游戏
+### 如何将该项目移植进您的游戏
 
 * 将 scripts/wxgame/subpackage.ts 拷贝进您的项目
 * 修改 config.wxgame.ts，将 ManifestPlugin 替换为 SubPackagePlugin （注意，您需要修改 build 和 publish）
